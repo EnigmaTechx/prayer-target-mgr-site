@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Derryck Dowuona -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>PT MGR - Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="home_logo" href="../index.html">
+          <img id="logo" src="../images/prayinghand.png" alt="praying hands" />
+          <h1>Prayer Target Manager</h1>
+        </a>
+        <ul>
+          <li><a href="target_mgr.html">Manage Targets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="tg_container">
+      <section id="summary">
+        <h2>Dashboard</h2>
+        <div class="summary_cards">
+          <div class="summary_card">
+            <h4>Total Targets</h4>
+            <p id="num_targets"></p>
+          </div>
+          <div class="summary_card">
+            <h4>Completed Targets</h4>
+            <p id="completed_targets"></p>
+          </div>
+          <div class="summary_card">
+            <h4>In Progress</h4>
+            <p id="progress_targets"></p>
+          </div>
+        </div>
+      </section>
+      <button id="btn_toggle_form">New Target</button>
+      <div class="new hide">
+        <form id="new_target_form">
+          <h3>New Target</h3>
+          <div>
+            <label for="topic">TOPIC</label>
+            <input type="text" name="topic" id="topic" /><span>*</span>
+          </div>
+          <div>
+            <label for="desc">DESCRIPTION</label>
+            <input type="text" name="desc" id="desc" /><span>*</span>
+          </div>
+          <div>
+            <label for="t_hours">TARGET HOURS</label>
+            <input type="number" name="t_hours" id="t_hours" min="1" /><span
+              >*</span
+            >
+          </div>
+          <div>
+            <label for="scripture">SCRIPTURE</label>
+            <input type="text" name="scripture" id="scripture" /><span>*</span>
+          </div>
+          <div id="n_btn_row">
+            <input type="button" id="btn_add" value="ADD TARGET" />
+            <input type="reset" id="btn_cancel" value="RESET" />
+          </div>
+        </form>
+      </div>
+
+      <section class="all_targets">
+        <p id="t_heading">List of Targets, from newest to oldest</p>
+        <span id="no_target"></span>
+
+        <div class="targets"></div>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.flaticon.com" target="_blank" title="vector icons"
+        >Icons obtained from Flaticon</a
+      >
+      <p>2023 &copy Derryck Dowuona. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script src="../js/target.js"></script>
+</html>

@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+#logo {
+  width: 3rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px #bbb;
+}
+
+#home_logo {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+}
+
+h1,
+nav li a {
+  transition: 0.5s;
+}
+
+h1:hover,
+nav li a:hover {
+  text-shadow: #00aeff 1px 2px 10px;
+}
+
+nav a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #1d5772;
+}
+
+#intro {
+  background: url(../images/main-bg.png);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+}
+
+.intro_content,
+.intro_img_container {
+  padding: 30px;
+  flex: 1;
+}
+
+.intro_content p {
+  line-height: 35px;
+  word-spacing: 3px;
+}
+
+.intro_img_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#btn_start {
+  padding: 20px;
+  background-color: #297ea6;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 10px;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+#btn_start:hover {
+  cursor: pointer;
+  color: #297ea6;
+  background-color: #fff;
+}
+
+#prayinghand {
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid #297ea6;
+}
+
+#feature {
+  background-color: #c7e3f0;
+  display: grid;
+}
+
+#feature h2 {
+  text-align: center;
+  color: #343434;
+}
+
+.features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.feature_card {
+  flex: 1;
+  text-align: center;
+  box-shadow: 6.5px 5.9px 6.7px rgba(0, 0, 0, 0.032),
+    21.9px 19.7px 22.6px rgba(0, 0, 0, 0.048),
+    98px 88px 101px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 10px 5px 10px;
+}
+
+.feature_card img {
+  width: 40%;
+}
+
+.feature_card p {
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* target_mgr */
+#tg_container {
+  background-color: #c7e3f0;
+  position: relative;
+  padding: 20px;
+}
+
+.summary_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary_card {
+  padding: 25px;
+  width: 20%;
+  flex: 1;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.summary_card p {
+  font-size: 25px;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+}
+
+div.hide {
+  display: none;
+}
+
+#btn_toggle_form {
+  border: none;
+  color: #fff;
+  background-color: #009de1;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 10px;
+  margin: 10px 0 5px 20px;
+  font-size: 20px;
+}
+#btn_toggle_form:hover {
+  cursor: pointer;
+  color: #009de1;
+  background-color: #fff;
+}
+
+#new_target_form {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  margin: 2rem;
+}
+
+#new_target_form div {
+  margin-bottom: 10px;
+}
+
+#new_target_form label {
+  display: inline-block;
+  width: 10rem;
+}
+
+#new_target_form input {
+  line-height: 25px;
+}
+
+#new_target_form input[type="submit"] {
+  justify-self: start;
+}
+
+#new_target_form span {
+  color: red;
+  font-size: 87.5%;
+  margin-left: 0.5em;
+}
+
+#n_btn_row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.targets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.target_card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.target_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.target_progress {
+  width: 8vw;
+  margin-left: -50px;
+  margin-right: 15px;
+  border-radius: inherit;
+  box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+  display: flex;
+  align-items: center;
+  height: 5vw;
+  margin-top: 50px;
+  background: #eee;
+}
+
+.target_progress span {
+  font-size: 30px;
+  padding: 15px;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-row button {
+  background: none;
+  border: none;
+  transition: 0.3s;
+}
+
+#btn_add,
+#btn_cancel {
+  background: none;
+  border: 1px solid;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+#btn_add {
+  color: #fff;
+  background-color: #008e0c;
+}
+#btn_add:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #008e0c;
+}
+
+#btn_cancel {
+  color: #fff;
+  background-color: #b00000;
+}
+#btn_cancel:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #b00000;
+}
+
+.btn-row button:hover {
+  cursor: pointer;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+@media screen and (max-width: 1024px) {
+  #intro {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .features {
+    gap: 0;
+    flex-direction: column;
+  }
+  .feature_card {
+    margin: 20px 50px;
+  }
+  .feature_card img {
+    width: 120px;
+  }
+  #prayinghand {
+    width: 100%;
+  }
+  #new_target_form {
+    width: 100%;
+  }
+
+  .target_content,
+  .summary_cards {
+    flex-direction: column;
+  }
+  .summary_card {
+    width: 100%;
+  }
+  .target_progress {
+    margin: 0;
+  }
+}
+/* ------------------------------ */
+/* code inspired by https://codepen.io/colbyalbo/pen/gRogbE */
+
+.target_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.target_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 35%;
+  border-radius: 10px;
+  box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.target_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.target_close:hover,
+.target_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#close_btn {
+  float: right;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: red;
+}
+
+#close_btn:hover {
+  cursor: pointer;
+}
+
+.t_head {
+  text-transform: uppercase;
+  text-align: center;
+}
+.h_content {
+  text-align: center;
+}
+
+#hours {
+  font-size: 40px;
+}
+
+#new_h {
+  font-size: 30px;
+  width: 15%;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+#add_hrs_btn {
+  margin-top: 3rem;
+  font-size: 25px;
+  background-color: #35bafb;
+  border: 1px solid #35bafb;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+#add_hrs_btn:hover {
+  cursor: pointer;
+  color: #35bafb;
+  background-color: white;
+}
+
+#h_error {
+  color: red;
+  font-size: 15px;
+}
+
+.wrap-circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background: #0087ff;
+  overflow: hidden;
+}
+.circle.per-25 {
+  background-image: conic-gradient(#0087ff 50%, #ffcdb2 0);
+}
+.circle.per-50 {
+  background-image: conic-gradient(#b5838d 50%, #ffcdb2 0);
+}
+.circle.per-75 {
+  background-image: conic-gradient(#b5838d 75%, #ffcdb2 0);
+}
+.circle.per-100 {
+  background-image: conic-gradient(#b5838d 100%, #ffcdb2 0);
+}
+.circle .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 115px;
+  height: 115px;
+  background: #000;
+  border-radius: 50%;
+  font-size: 1.85em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.c-txt {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
